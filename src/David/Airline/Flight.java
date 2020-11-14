@@ -7,11 +7,19 @@ public class Flight {
     int fNum;
     String time;
     String gate;
+<<<<<<< HEAD
     String dDate;
     String Destination;
 
     // functionality methods
     public void printFlight() {
+=======
+    String  dDate;
+    String Destination;
+
+    // functionality methods
+    public void printFlight(){
+>>>>>>> master
         System.out.println("Ticket number: " + fNum);
         System.out.println("Departure time: " + time);
         System.out.println("Gate number: " + gate);

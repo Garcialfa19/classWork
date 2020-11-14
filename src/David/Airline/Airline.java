@@ -3,7 +3,26 @@ package David.Airline;
 
 
 public class Airline {
+    Person p1 = new Person();
+    Person p2 = new Person();
+    Person p3 = new Person();
+    Ticket t1 = new Ticket();
+    Ticket t2 = new Ticket();
+    Ticket t3 = new Ticket();
+    Flight f1 = new Flight();
+    Flight f2 = new Flight();
+    Flight f3 = new Flight();
 
+    public static boolean rPassenger(Person p){
+        boolean result = false;
+
+        if(p. getAge()>50){
+            result = true;
+        }
+        return result;
+    }
+
+<<<<<<< HEAD
     int numClients;
     Person[] clients;
 
@@ -42,6 +61,13 @@ public class Airline {
         return p1;
     }
 
+=======
+    // get and set
+    public Person getP1() {
+        return p1;
+    }
+
+>>>>>>> master
     public void setP1(Person p1) {
         this.p1 = p1;
     }
