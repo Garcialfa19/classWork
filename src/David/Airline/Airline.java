@@ -1,62 +1,64 @@
+
 package David.Airline;
+
 
 public class Airline {
 
-    public static void main(String[] args) {
+    int numClients;
+    Person[] clients;
 
-        // passenger 1
-        Person p1 = new Person();
-        p1. setName("David");
-        p1. setLastName("Garcia");
-        p1. setAge(20);
-        p1. setSex(true);
-        p1. setBirthPlace("Denver");
-        Ticket t1 = new Ticket();
-        t1. settNum(4692);
-        t1. setTime("11:45 AM");
-        t1. setGate("24D");
-        t1. setDelayed(false);
-        t1. setCanceled(false);
+    Person p1;
+    Person p2;
+    Person p3;
+    Ticket t1 = new Ticket();
+    Ticket t2 = new Ticket();
+    Ticket t3 = new Ticket();
+    Flight f1 = new Flight();
+    Flight f2 = new Flight();
+    Flight f3 = new Flight();
 
-        // passenger 2
-        Person p2 = new Person();
-        p2.setName("Laura");
-        p2.setLastName("Gutierrez");
-        p2.setBirthPlace("Cartago");
-        p2. setAge(20);
-        p2. setSex(false);
-        Ticket t2 = new Ticket();
-        t2. settNum(4260);
-        t2. setTime("12:30 PM");
-        t2. setGate("24D");
-        t2. setDelayed(false);
-        t2. setCanceled(true);
+    public Airline() {
+        numClients = 0;
+        clients = new Person[10];
+        for (int i = 0; i < clients.length; i++) {
+            clients[i] = null;
+        }
+        p1 = new Person();
+        p2 = new Person();
+        p3 = new Person();
+    }
 
-        // passenger 3
-        Person p3 = new Person();
-        p3. setName("Carlos");
-        p3. setBirthPlace("Mendez R");
-        p3. setAge(30);
-        p3. setSex(true);
-        p3. setBirthPlace("SJ");
-        Ticket t3 = new Ticket();
-        t3. settNum(4205);
-        t3. setTime("1:00 PM");
-        t3. setGate("5D");
-        t3. setDelayed(true);
-        t3. setCanceled(false);
+    public boolean rPassenger(Person p) {
+        boolean result = false;
 
-        // print passenger full name
+        if (p.getAge() > 50) {
+            result = true;
+        }
+        return result;
+    }
 
-        p1. printFullInfo();
-        t1. printTicket();
-        System.out.println(); // visual spacer
-        p2. printFullInfo();
-        t2. printTicket();
-        System.out.println(); // visual spacer
-        p3. printFullInfo();
-        t3. printTicket();
+    // get and set
+    public Person getP1() {
+        return p1;
+    }
 
+    public void setP1(Person p1) {
+        this.p1 = p1;
+    }
 
+    public Person getP2() {
+        return p2;
+    }
+
+    public void setP2(Person p2) {
+        this.p2 = p2;
+    }
+
+    public Person getP3() {
+        return p3;
+    }
+
+    public void setP3(Person p3) {
+        this.p3 = p3;
     }
 }
