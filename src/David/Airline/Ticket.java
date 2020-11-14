@@ -3,16 +3,16 @@ package David.Airline;
 public class Ticket {
     //Properties
     int tNum;
-    String time;
-    String gate;
+    String type;
+    String seat;
     boolean delayed;
     boolean canceled;
 
     // functionality methods
     public void printTicket(){
         System.out.println("Ticket number: " + tNum);
-        System.out.println("Departure time: " + time);
-        System.out.println("Gate number: " + gate);
+        System.out.println("Departure time: " + type);
+        System.out.println("Gate number: " + seat);
         System.out.println("Delayed: " + delayed);
         System.out.println("Canceled: " + canceled);
     }
@@ -25,20 +25,20 @@ public class Ticket {
         this.tNum = tNum;
     }
 
-    public String getTime() {
-        return time;
+    public String getType() {
+        return type;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public String getGate() {
-        return gate;
+    public String getSeat() {
+        return seat;
     }
 
-    public void setGate(String gate) {
-        this.gate = gate;
+    public void setSeat(String seat) {
+        this.seat = seat;
     }
 
     public boolean isDelayed() {
