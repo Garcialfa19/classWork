@@ -39,7 +39,7 @@ public class Airline {
     public Airline() {
         numClients = 0;
         clients = new Person[10];
-        for (int i = 0; i < clients.length; i++) {
+        for (int i = 0  ; i < clients.length; i++) {
             clients[i] = null;
         }
         p1 = new Person();
