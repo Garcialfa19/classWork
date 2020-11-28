@@ -1,6 +1,8 @@
 package David.School;
 
 public class Student {
+    Parent father;
+    Parent mother;
     String name;
     String lastName;
     int id;
@@ -8,18 +10,31 @@ public class Student {
     public Student(){
     }
 
-    public Student(String name, String lastName, int id){
+    public Student(Parent father, Parent mother, String name, String lastName, int id) {
+        this.father = father;
+        this.mother = mother;
         this.name = name;
         this.lastName = lastName;
         this.id = id;
     }
 
+    // getter and setter
 
-    public void showData(){
-        System.out.println(name + " " + lastName + " " + id);
+    public Parent getFather() {
+        return father;
     }
 
-    // gets and sets
+    public void setFather(Parent father) {
+        this.father = father;
+    }
+
+    public Parent getMother() {
+        return mother;
+    }
+
+    public void setMother(Parent mother) {
+        this.mother = mother;
+    }
 
     public String getName() {
         return name;
@@ -47,8 +62,10 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Name: " + name +
-                ", Last Name: " + lastName +
-                ", Id: " + id;
+    return "father: " + father +
+            ", mother: " + mother +
+            ", Student Name: " + name +
+            ", lastName: " + lastName +
+            ", id: " + id;
     }
 }

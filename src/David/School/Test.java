@@ -14,6 +14,7 @@ public class Test {
     public Test(Teacher teacher, Student student, int grade, String nameClass, int totalPoints, int pointsObtained){
         this.student = student;
         this.teacher = teacher;
+        this.nameClass = nameClass;
         this.grade = grade;
         this.totalPoints = totalPoints;
         this.pointsObtained = pointsObtained;

@@ -2,7 +2,7 @@ package David.School;
 
 import java.util.Scanner;
 
-public class Tester {
+public class Tester1 {
     public static void main(String[] args) {
 
         GradeSystem system = new GradeSystem();
@@ -19,6 +19,20 @@ public class Tester {
             switch (operation) {
                 // Add a new test
                 case 'A':
+                    // fathers info
+                    System.out.println("Enter the Fathers name:");
+                    String pName = s.next();
+                    System.out.println("Enter the Parents last name:");
+                    String pLastName = s.next();
+                    Parent father = new Parent(pName, pLastName);
+
+                    //mothers info
+                    System.out.println("Enter the Mothers name:");
+                    pName = s.next();
+                    System.out.println("Enter the Parents last name:");
+                    pLastName = s.next();
+                    Parent mother = new Parent(pName, pLastName);
+
                     // student info
                     System.out.println("Enter the students name:");
                     String name = s.next();
@@ -26,7 +40,7 @@ public class Tester {
                     String lastName = s.next();
                     System.out.println("Enter the students id number:");
                     int id = s.nextInt();
-                    Student student = new Student(name, lastName, id); // creates student
+                    Student student = new Student(father, mother, name, lastName, id); // creates student
 
                     // teacher info
                     System.out.println("Enter the teachers name:");

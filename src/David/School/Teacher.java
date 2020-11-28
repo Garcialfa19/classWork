@@ -5,17 +5,18 @@ public class Teacher {
     String tLastName;
     int tnum;
 
-    public Teacher(){
+    public Teacher() {
     }
 
-    public Teacher(String tName, String tLastName, int tnum){
+    public Teacher(String tName, String tLastName, int tnum) {
         this.tName = tName;
         this.tLastName = tLastName;
-        this. tnum = tnum;
+        this.tnum = tnum;
     }
 
-    public void showData(){
-        System.out.println(tName + " " + tLastName + " " + tnum);}
+    public void showData() {
+        System.out.println(tName + " " + tLastName + " " + tnum);
+    }
 
     // getter and setter
 
