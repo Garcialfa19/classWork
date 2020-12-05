@@ -12,7 +12,7 @@ public class Parent {
         this.pLastName = pLastName;
     }
 
-    public void showData() {
+    public void printParent() {
         System.out.println(pName + " " + pLastName);
     }
 
