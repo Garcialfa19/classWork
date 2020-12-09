@@ -14,7 +14,6 @@ public class MoneyConv {
         this.euro = euro;
     }
 
-
     //this method requires that currencyOrigin and targetCurrency to be established
     public float convert(Currency currencyOrigin, Currency targetCurrency, float amount) {
         float result = 0;
@@ -29,35 +28,51 @@ public class MoneyConv {
                     result = amount / euro.getValueColon();
                 }
             } else if (currencyOrigin.getName().equals("Dollar")) {
+                if (targetCurrency.getName().equals("Colon")) {
+                    result = amount * 500;
+                } else if (targetCurrency.getName().equals("Dollar")) {
+                    result = amount;
+                } else if (targetCurrency.getName().equals("Euro")) {
+                    result = (float) (amount / 1.53);
+                }
 
-            } else {
+            } else if (currencyOrigin.getName().equals("Euro")) {
+                if (targetCurrency.getName().equals("Colon")) {
+                    result = amount * 750;
+                } else if (targetCurrency.getName().equals("Dollar")) {
+                    result = (float) (amount * 1.53);
+                } else if (targetCurrency.getName().equals("Euro")) {
+                    result = amount;
 
+                }
             }
+            return result;
         }
+
         return result;
     }
 
-    public Currency getMonedaColon() {
+    public Currency getColon() {
         return colon;
     }
 
-    public void setMonedaColon(Currency monedaColon) {
-        this.colon = monedaColon;
+    public void setColon(Currency colon) {
+        this.colon = colon;
     }
 
-    public Currency getMonedaDolar() {
+    public Currency getDollar() {
         return dollar;
     }
 
-    public void setMonedaDolar(Currency monedaDolar) {
-        this.dollar = monedaDolar;
+    public void setDollar(Currency dollar) {
+        this.dollar = dollar;
     }
 
-    public Currency getMonedaEuro() {
+    public Currency getEuro() {
         return euro;
     }
 
-    public void setMonedaEuro(Currency monedaEuro) {
-        this.euro = monedaEuro;
+    public void setEuro(Currency euro) {
+        this.euro = euro;
     }
 }
