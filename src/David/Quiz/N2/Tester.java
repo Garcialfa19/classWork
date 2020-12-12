@@ -25,9 +25,14 @@ public class Tester {
 
         int tprice = 3250;
 
+<<<<<<< HEAD
         Pizza pizza = new Pizza(pepperoni, cheese, mushrooms, tprice);
 
         system.printPizza();
+=======
+        Pizza p = new Pizza(pepperoni, cheese, mushrooms, tprice);
+
+>>>>>>> master
 
     }
 }

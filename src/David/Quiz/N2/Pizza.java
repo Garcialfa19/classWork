@@ -18,10 +18,13 @@ public class Pizza {
     }
 
     public void printPizza(){
+<<<<<<< HEAD
         System.out.println(pizza.toString);
     }
 
     public void printPizza(){
+=======
+>>>>>>> master
         System.out.println(pepperoni + " " + cheese + " " + mushrooms + " " + tprice);
     }
 
