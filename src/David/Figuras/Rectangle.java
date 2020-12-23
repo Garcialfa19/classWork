@@ -2,6 +2,7 @@ package David.Figuras;
 
 public class Rectangle {
 
+    // defines the caracteristics of the rectangle
     int sx;
     int sy;
     int swidth;

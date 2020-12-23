@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class Tester {
     public static void main(String args[]){
 
-        int n = 5;
+        int n = 5; // defines leanght of arrays
         Scanner s = new Scanner(System.in);
 
         int[] a = new int[n];
-        Array array = new Array(a);
+        Array a = new Array(a);
 
         for (int i = 0; i < n; i++) {
             System.out.println("Enter a number for the first array");
@@ -18,45 +18,38 @@ public class Tester {
         }
 
         int[] b = new int[n];
-        Array array1 = new Array(b);
+        Array b = new Array(b);
 
         for (int j = 0; j < n; j++) {
             System.out.println("Enter a number for the second array");
             b [j] = s.nextInt();
         }
 
+        // Finds the lenght of the resulting array by ading the lenght of the two original arrays
         int a1 = a.length;
         int b1 = b.length;
         int c1 = a1 + b1;
 
         int[] c = new int[c1];
 
-        // Loop to store the elements of first
-        // array into resultant array
+        // Storing the elements in the c array
         for (int i = 0; i < a1; i = i + 1) {
-            // Storing the elements in
-            // the resultant array
             c[i] = a[i];
         }
-
-        // Loop to concat the elements of second
-        // array into resultant array
+        // Storing the elements in the c array
         for (int i = 0; i < b1; i = i + 1) {
-
-            // Storing the elements in the
-            // resultant array
             c[a1 + i] = b[i];
         }
 
-        // Loop to print the elements of
-        // resultant array after merging
+        // Loop to print the elements of the c array
         System.out.print("The merged array is: ");
         Arrays.sort(c);
-        for (int i = 0; i < c1; i = i + 1) {
 
+        for (int i = 0; i < c1; i = i + 1) {
             // print the element
             System.out.print(c[i] + ", ");
         }
+
         System.out.println();
         System.out.println("Array 1: " + array);
         System.out.println("Array 2: " + array1);

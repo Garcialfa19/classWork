@@ -2,6 +2,7 @@ package David.Figuras;
 
 public class Oval {
 
+    // defines the caracteristics of the oval
     int x;
     int y;
     int width;

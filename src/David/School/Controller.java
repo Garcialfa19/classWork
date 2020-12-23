@@ -2,13 +2,13 @@ package David.School;
 
 import java.util.Scanner;
 
-public class Tester1 {
-    public static void main(String[] args) {
+public class Controller {
 
-        GradeSystem system = new GradeSystem();
-        Scanner s = new Scanner(System.in);
-        char operation;
+    GradeSystem system = new GradeSystem();
+    Scanner s = new Scanner(System.in);
+    char operation;
 
+    public void operation {
         while (true) {
             System.out.println("Please select the action that you wish to perform");
             System.out.println("A: Add a new entry");

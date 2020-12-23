@@ -46,7 +46,7 @@ public class MyWindow extends JFrame{
 
 
         // Agrega los componentes a MiVentana
-        this.add(panelIzquierda, BorderLayout.WEST);
+        this.add(panelIzquierda, BorderLayout.EAST);
         this.add(panelCentral, BorderLayout.CENTER);
 
 
